@@ -4,7 +4,7 @@ A modern, responsive e-commerce website built with React, TypeScript, and Tailwi
 
 ## 🚀 Live Demo
 
-Visit the live site: [https://ecom-hatimalucard.vercel.app](https://ecom-hatimalucard.vercel.app)
+Visit the live site: [https://ecom-hatimbenayad.vercel.app](https://ecom-hatimbenayad.vercel.app)
 
 ## ✨ Features
 
@@ -79,7 +79,7 @@ Visit the live site: [https://ecom-hatimalucard.vercel.app](https://ecom-hatimal
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/hatimalucard-cyber/ecom.git
+git clone https://github.com/hatimbenayad/ecom.git
 cd ecom
 ```
 
@@ -245,4 +245,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by [Hatim Al Ucard](https://github.com/hatimalucard-cyber)**
+**Built with ❤️ by [Hatim Benayad](https://github.com/hatimbenayad)**
