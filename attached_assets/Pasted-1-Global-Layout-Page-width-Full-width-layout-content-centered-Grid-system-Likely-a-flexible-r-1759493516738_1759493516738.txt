@@ -1,0 +1,245 @@
+1. Global Layout
+
+Page width: Full-width layout, content centered.
+
+Grid system: Likely a flexible responsive grid (CSS Grid or Flexbox).
+
+Background color: Predominantly white (#ffffff) with occasional full-width image banners.
+
+Typography: Clean sans-serif (similar to Helvetica/Arial, modern, thin weights).
+
+Colors:
+
+Text: Black (#000000) and gray (#555555).
+
+Buttons: Black with white text (#000000 background, #ffffff text).
+
+Highlight colors: Red (#e60000 / #ff0000) used for discounts and CTA highlights.
+
+2. Header (Sticky Top Bar)
+
+Top thin strip (announcement bar):
+
+Centered text: "ENVÍOS GRATIS A PARTIR DE 70 €".
+
+Background: White.
+
+Text: Small, uppercase, black.
+
+Main Header Section:
+
+Logo (left): “Foot on Mars” logo in red (#e60000), positioned at top-left.
+
+Navigation menu (center):
+
+Links: "CALZADO", "ROPA", "ACCESORIOS", "MARCAS", "OUTLET".
+
+Font: Bold uppercase.
+
+Hover: likely underline or color change.
+
+Search + Icons (right):
+
+Search bar (input with placeholder "Buscar").
+
+User account icon.
+
+Wishlist (heart) icon.
+
+Shopping cart icon.
+
+Behavior: Sticky at top while scrolling.
+
+3. Hero Banner
+
+Full-width large banner image.
+
+Left-aligned logo (NB New Balance).
+
+White bold text overlay: "The 740".
+
+Two people wearing sneakers, legs only, centered.
+
+Responsive scaling: Image covers full width.
+
+4. "Explora" Section
+
+Title: "EXPLORA" in uppercase, centered, black text.
+
+Grid layout (4 columns on desktop, stacked on mobile):
+
+Card 1: Nike shoes with desert/mars background. CTA: “Zapatillas”.
+
+Card 2: Converse shoe close-up. CTA: “Converse”.
+
+Card 3: Apparel couple photo. CTA: “Apparel”.
+
+Card 4: Nike shoes close-up. CTA: “Ofertas”.
+
+Each card:
+
+Full-bleed image.
+
+Overlay button with category name.
+
+Hover effect: likely zoom-in or dark overlay.
+
+5. Brand Highlight Banners
+
+Two half-width banners side by side (flexbox row):
+
+Left: Nike model lying on sofa. Button: “VER TODO”.
+
+Right: Adidas shoe in desert canyon. Button: “VER TODO”.
+
+Buttons:
+
+Style: Rounded rectangle, white background, black border/text.
+
+Positioned bottom center of images.
+
+6. "Lo Más Top" (Product Grid Section)
+
+Title: "LO MÁS TOP" (uppercase, centered, black text).
+
+Subtitle (categories): NB 530, GAZELLE, SPEEDCAT, AIR FORCE ONE.
+
+Product Grid (4 per row desktop, 2 per row tablet, 1 per row mobile):
+
+Each product card:
+
+Product image (shoe only, clean background).
+
+Brand name (New Balance).
+
+Model name (e.g., MR530).
+
+Price:
+
+Standard: Black text.
+
+Discounted: Red old price (strikethrough) + bold black new price.
+
+Wishlist heart icon (top-right corner).
+
+7. Adidas Gazelle Feature Banner
+
+Full-width desert background.
+
+Center: Floating Adidas Gazelle shoe (rendered with shadow).
+
+Right side: Vertical navigation (circle icons of shoe variations).
+
+CTA: "VER PRODUCTO" (button, white background, black text, underline).
+
+8. Gender Categories Section
+
+3-column layout:
+
+Left: Hombre (man in black tracksuit).
+
+Center: Mujer (woman in white dress + Nike shoes).
+
+Right: Junior (kid with basketball).
+
+Each image is full-bleed, with text labels top-left ("HOMBRE", "MUJER", "JUNIOR").
+
+Hover likely darkens image with CTA.
+
+9. New Collection (Converse Chuck)
+
+Split layout (2 columns):
+
+Left: Large image of man wearing Converse, text overlay: "LOVE Chuck".
+
+White handwritten-style font overlay.
+
+Right: Product card:
+
+Product: Chuck 70 Classic High Top.
+
+Price: 95,00 €.
+
+Button: “VER COLECCIÓN” (black background, white text).
+
+10. Newsletter Signup Section
+
+Background: White.
+
+Heading (uppercase, bold): "ÚNETE!".
+
+Subheading: "¡Descubre novedades, tendencias y ofertas con nuestra newsletter!"
+
+Form:
+
+Input field (email).
+
+Button: “Suscribirme” (black background, white text).
+
+Extra note: “Recibe un descuento del 10% en tu primera compra!”
+
+11. Footer
+
+Four-column layout:
+
+Col 1 (Logo + Payment):
+
+Logo: “Foot on Mars”.
+
+Payment methods icons (Visa, Mastercard, PayPal).
+
+Col 2 (Ayuda - Help):
+
+Links: FAQ, Shipping & Returns, Contact, Gift Cards.
+
+Col 3 (About):
+
+Links: Stores, Company info, About Foot on Mars.
+
+Col 4 (Legal/Links):
+
+Links: Terms, Privacy, Cookies policy.
+
+Bottom bar:
+
+Copyright.
+
+Developer credit: “Developed by Experimentosgilizity”.
+
+Interactions & Responsiveness
+
+Hover Effects:
+
+Images zoom-in slightly on hover.
+
+Buttons invert colors or underline.
+
+Wishlist heart toggles between outline/filled.
+
+Responsive Design:
+
+Desktop: Multi-column grids.
+
+Tablet: 2-column layouts.
+
+Mobile: Single column, stacked vertically, collapsible menus.
+
+Navigation:
+
+Top nav collapses into a hamburger menu on mobile.
+
+Search expands into overlay input on mobile.
+
+Developer Instructions
+
+Tech stack suggestion:
+
+Frontend: React + Tailwind CSS or Next.js for dynamic rendering.
+
+Layout: Flexbox + CSS Grid.
+
+Images: Responsive <picture> or srcset.
+
+Fonts: Google Fonts (e.g., Inter, Helvetica Neue).
+
+Animations: CSS transitions (hover zoom, fade).
