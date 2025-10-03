@@ -3,8 +3,8 @@ import mujerImg from "@assets/stock_images/fashion_lifestyle_yo_c9cc7599.jpg";
 import juniorImg from "@assets/stock_images/fashion_lifestyle_yo_d1eccd28.jpg";
 
 const categories = [
-  { id: 1, title: "HOMBRE", image: hombreImg, testId: "category-hombre" },
-  { id: 2, title: "MUJER", image: mujerImg, testId: "category-mujer" },
+  { id: 1, title: "MEN", image: hombreImg, testId: "category-hombre" },
+  { id: 2, title: "WOMEN", image: mujerImg, testId: "category-mujer" },
   { id: 3, title: "JUNIOR", image: juniorImg, testId: "category-junior" },
 ];
 

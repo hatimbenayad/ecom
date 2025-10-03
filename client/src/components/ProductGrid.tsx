@@ -35,7 +35,7 @@ export default function ProductGrid() {
     <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 uppercase" data-testid="text-lo-mas-top">
-          LO MÁS TOP
+          TOP PICKS
         </h2>
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-sm text-muted-foreground uppercase tracking-wide">

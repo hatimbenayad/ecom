@@ -28,7 +28,7 @@ export default function ConverseCollection() {
             </div>
             <div>
               <Button className="font-bold" data-testid="button-ver-coleccion">
-                VER COLECCIÓN
+                VIEW COLLECTION
               </Button>
             </div>
           </div>

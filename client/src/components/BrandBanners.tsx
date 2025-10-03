@@ -13,7 +13,7 @@ export default function BrandBanners() {
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10 absolute inset-0 flex items-end justify-center p-6 sm:p-8">
               <Button variant="outline" className="bg-background/95 backdrop-blur-sm font-bold" data-testid="button-nike-ver-todo">
-                VER TODO
+                VIEW ALL
               </Button>
             </div>
             <div className="absolute top-6 left-6 z-10">
@@ -27,7 +27,7 @@ export default function BrandBanners() {
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10 absolute inset-0 flex items-end justify-center p-6 sm:p-8">
               <Button variant="outline" className="bg-background/95 backdrop-blur-sm font-bold" data-testid="button-adidas-ver-todo">
-                VER TODO
+                VIEW ALL
               </Button>
             </div>
             <div className="absolute top-6 left-6 z-10">

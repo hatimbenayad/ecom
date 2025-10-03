@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Column 1: Logo + Payment */}
           <div>
             <h3 className="text-xl font-bold text-primary mb-4">Hatim Demo N2</h3>
-            <p className="text-sm font-medium mb-3 uppercase">Medios de Pago</p>
+            <p className="text-sm font-medium mb-3 uppercase">Payment Methods</p>
             <div className="flex gap-2 flex-wrap">
               <div className="w-12 h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">VISA</div>
               <div className="w-12 h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">MC</div>
@@ -15,24 +15,24 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Ayuda */}
+          {/* Column 2: Help */}
           <div>
-            <h4 className="font-bold mb-4 uppercase text-sm">Ayuda</h4>
+            <h4 className="font-bold mb-4 uppercase text-sm">Help</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-faq">Preguntas frecuentes</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-shipping">Envíos y devoluciones</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-contact">Contacto</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-gift-cards">Tarjetas regalo</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-faq">FAQ</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-shipping">Shipping & Returns</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-contact">Contact</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-gift-cards">Gift Cards</a></li>
             </ul>
           </div>
 
-          {/* Column 3: Sobre nosotros */}
+          {/* Column 3: About Us */}
           <div>
-            <h4 className="font-bold mb-4 uppercase text-sm">Sobre nosotros</h4>
+            <h4 className="font-bold mb-4 uppercase text-sm">About Us</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-stores">Tiendas</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-company">Información de empresa</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-about">Sobre Hatim Demo N2</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-stores">Stores</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-company">Company Info</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-about">About Hatim Demo N2</a></li>
             </ul>
           </div>
 
@@ -40,16 +40,16 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4 uppercase text-sm">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-terms">Términos y condiciones</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-privacy">Política de privacidad</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-cookies">Política de cookies</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-terms">Terms & Conditions</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-privacy">Privacy Policy</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-cookies">Cookie Policy</a></li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p data-testid="text-copyright">©2023 Hatim Demo N2 todos los derechos reservados.</p>
+          <p data-testid="text-copyright">©2023 Hatim Demo N2 all rights reserved.</p>
           <p data-testid="text-developer">Developed by <span className="font-medium">Experimentosgilizity</span></p>
         </div>
       </div>

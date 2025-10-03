@@ -29,16 +29,16 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
             <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-calzado">
-              CALZADO
+              FOOTWEAR
             </a>
             <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-ropa">
-              ROPA
+              CLOTHING
             </a>
             <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-accesorios">
-              ACCESORIOS
+              ACCESSORIES
             </a>
             <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-marcas">
-              MARCAS
+              BRANDS
             </a>
             <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-outlet">
               OUTLET
@@ -51,7 +51,7 @@ export default function Header() {
               <Search className="absolute left-3 h-4 w-4 text-muted-foreground" />
               <Input
                 type="search"
-                placeholder="Buscar"
+                placeholder="Search"
                 className="pl-9 w-48 lg:w-64"
                 data-testid="input-search"
               />
@@ -75,16 +75,16 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="lg:hidden py-4 space-y-2 border-t border-border">
             <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-calzado">
-              CALZADO
+              FOOTWEAR
             </a>
             <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-ropa">
-              ROPA
+              CLOTHING
             </a>
             <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-accesorios">
-              ACCESORIOS
+              ACCESSORIES
             </a>
             <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-marcas">
-              MARCAS
+              BRANDS
             </a>
             <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-outlet">
               OUTLET

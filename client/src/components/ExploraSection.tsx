@@ -5,10 +5,10 @@ import apparelImg from "@assets/stock_images/fashion_lifestyle_yo_349b6ece.jpg";
 import ofertasImg from "@assets/stock_images/modern_sneakers_shoe_0e59b48f.jpg";
 
 const categories = [
-  { id: 1, title: "Zapatillas", image: zapatillasImg, testId: "card-zapatillas" },
+  { id: 1, title: "Sneakers", image: zapatillasImg, testId: "card-zapatillas" },
   { id: 2, title: "Converse", image: converseImg, testId: "card-converse" },
   { id: 3, title: "Apparel", image: apparelImg, testId: "card-apparel" },
-  { id: 4, title: "Ofertas", image: ofertasImg, testId: "card-ofertas" },
+  { id: 4, title: "Sale", image: ofertasImg, testId: "card-ofertas" },
 ];
 
 export default function ExploraSection() {
@@ -16,7 +16,7 @@ export default function ExploraSection() {
     <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 uppercase" data-testid="text-explora">
-          EXPLORA
+          EXPLORE
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

@@ -14,10 +14,10 @@ export default function GazelleFeature() {
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2" data-testid="text-gazelle-title">
                 Adidas Gazelle
               </h3>
-              <p className="text-sm sm:text-base text-white/80 mb-6">Estilo clásico atemporal</p>
+              <p className="text-sm sm:text-base text-white/80 mb-6">Timeless classic style</p>
             </div>
             <Button variant="outline" className="bg-background/95 backdrop-blur-sm font-bold" data-testid="button-ver-producto">
-              VER PRODUCTO
+              VIEW PRODUCT
             </Button>
           </div>
         </div>
