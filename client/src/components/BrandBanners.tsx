@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import nikeImg from "@assets/stock_images/fashion_lifestyle_yo_90d77e92.jpg";
+import adidasImg from "@assets/stock_images/nike_adidas_athletic_6fcd76d7.jpg";
 
 export default function BrandBanners() {
   return (
@@ -7,27 +9,29 @@ export default function BrandBanners() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Nike Banner */}
           <div className="group relative aspect-[4/3] overflow-hidden rounded-md hover-elevate active-elevate-2 cursor-pointer" data-testid="banner-nike">
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300"></div>
-            <div className="absolute inset-0 flex items-end justify-center p-6 sm:p-8">
+            <img src={nikeImg} alt="Nike Collection" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="relative z-10 absolute inset-0 flex items-end justify-center p-6 sm:p-8">
               <Button variant="outline" className="bg-background/95 backdrop-blur-sm font-bold" data-testid="button-nike-ver-todo">
                 VER TODO
               </Button>
             </div>
-            <div className="absolute top-6 left-6">
-              <span className="text-2xl sm:text-3xl font-bold text-foreground">NIKE</span>
+            <div className="absolute top-6 left-6 z-10">
+              <span className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg">NIKE</span>
             </div>
           </div>
 
           {/* Adidas Banner */}
           <div className="group relative aspect-[4/3] overflow-hidden rounded-md hover-elevate active-elevate-2 cursor-pointer" data-testid="banner-adidas">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-200 to-red-300"></div>
-            <div className="absolute inset-0 flex items-end justify-center p-6 sm:p-8">
+            <img src={adidasImg} alt="Adidas Collection" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="relative z-10 absolute inset-0 flex items-end justify-center p-6 sm:p-8">
               <Button variant="outline" className="bg-background/95 backdrop-blur-sm font-bold" data-testid="button-adidas-ver-todo">
                 VER TODO
               </Button>
             </div>
-            <div className="absolute top-6 left-6">
-              <span className="text-2xl sm:text-3xl font-bold text-foreground">ADIDAS</span>
+            <div className="absolute top-6 left-6 z-10">
+              <span className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg">ADIDAS</span>
             </div>
           </div>
         </div>

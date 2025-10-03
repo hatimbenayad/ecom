@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import chuckImg from "@assets/stock_images/nike_adidas_athletic_b273a51e.jpg";
 
 export default function ConverseCollection() {
   return (
@@ -6,7 +7,9 @@ export default function ConverseCollection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
           {/* Left: Image with text overlay */}
-          <div className="relative aspect-[4/5] bg-gradient-to-br from-red-100 to-pink-200 rounded-md overflow-hidden">
+          <div className="relative aspect-[4/5] rounded-md overflow-hidden">
+            <img src={chuckImg} alt="Converse Chuck Collection" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/30"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-6xl sm:text-7xl md:text-8xl font-light text-white/90" style={{ fontFamily: 'cursive' }} data-testid="text-love-chuck">
                 LOVE Chuck

@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Logo + Payment */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">Foot on Mars</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Hatim Demo N2</h3>
             <p className="text-sm font-medium mb-3 uppercase">Medios de Pago</p>
             <div className="flex gap-2 flex-wrap">
               <div className="w-12 h-8 bg-muted rounded flex items-center justify-center text-xs font-bold">VISA</div>
@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-stores">Tiendas</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-company">Información de empresa</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-about">Sobre Foot on Mars</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors" data-testid="link-about">Sobre Hatim Demo N2</a></li>
             </ul>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p data-testid="text-copyright">©2023 Foot on Mars todos los derechos reservados.</p>
+          <p data-testid="text-copyright">©2023 Hatim Demo N2 todos los derechos reservados.</p>
           <p data-testid="text-developer">Developed by <span className="font-medium">Experimentosgilizity</span></p>
         </div>
       </div>

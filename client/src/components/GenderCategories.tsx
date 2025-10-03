@@ -1,7 +1,11 @@
+import hombreImg from "@assets/stock_images/fashion_lifestyle_yo_51a09e31.jpg";
+import mujerImg from "@assets/stock_images/fashion_lifestyle_yo_c9cc7599.jpg";
+import juniorImg from "@assets/stock_images/fashion_lifestyle_yo_d1eccd28.jpg";
+
 const categories = [
-  { id: 1, title: "HOMBRE", gradient: "from-slate-700 to-slate-900", testId: "category-hombre" },
-  { id: 2, title: "MUJER", gradient: "from-blue-100 to-blue-200", testId: "category-mujer" },
-  { id: 3, title: "JUNIOR", gradient: "from-orange-200 to-orange-300", testId: "category-junior" },
+  { id: 1, title: "HOMBRE", image: hombreImg, testId: "category-hombre" },
+  { id: 2, title: "MUJER", image: mujerImg, testId: "category-mujer" },
+  { id: 3, title: "JUNIOR", image: juniorImg, testId: "category-junior" },
 ];
 
 export default function GenderCategories() {
@@ -15,10 +19,14 @@ export default function GenderCategories() {
               className="group relative aspect-[3/4] overflow-hidden rounded-md hover-elevate active-elevate-2 cursor-pointer"
               data-testid={category.testId}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} transition-transform duration-300 group-hover:scale-105`}></div>
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-              <div className="absolute top-6 left-6">
-                <h3 className={`text-2xl sm:text-3xl font-bold ${category.id === 1 ? 'text-white' : 'text-foreground'}`} data-testid={`text-${category.title.toLowerCase()}`}>
+              <img 
+                src={category.image} 
+                alt={category.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+              <div className="absolute top-6 left-6 z-10">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg" data-testid={`text-${category.title.toLowerCase()}`}>
                   {category.title}
                 </h3>
               </div>

@@ -22,7 +22,7 @@ export default function Header() {
               <Menu className="h-5 w-5" />
             </Button>
             <a href="/" className="flex-shrink-0" data-testid="link-logo">
-              <span className="text-2xl font-bold text-primary">Foot on Mars</span>
+              <span className="text-2xl font-bold text-primary">Hatim Demo N2</span>
             </a>
           </div>
 

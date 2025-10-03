@@ -1,17 +1,25 @@
 import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import img1 from "@assets/stock_images/modern_sneakers_shoe_7c2b5a58.jpg";
+import img2 from "@assets/stock_images/modern_sneakers_shoe_8445b7f4.jpg";
+import img3 from "@assets/stock_images/modern_sneakers_shoe_a56754c4.jpg";
+import img4 from "@assets/stock_images/modern_sneakers_shoe_c3d1520a.jpg";
+import img5 from "@assets/stock_images/modern_sneakers_shoe_855cdaf4.jpg";
+import img6 from "@assets/stock_images/modern_sneakers_shoe_5dd08e16.jpg";
+import img7 from "@assets/stock_images/modern_sneakers_shoe_f58ff251.jpg";
+import img8 from "@assets/stock_images/modern_sneakers_shoe_c0dc2dca.jpg";
 
 //todo: remove mock functionality
 const products = [
-  { id: 1, brand: "New Balance", model: "MR530", price: 120, discountPrice: null, testId: "product-nb-530" },
-  { id: 2, brand: "Adidas", model: "Gazelle", price: 100, discountPrice: 75, testId: "product-gazelle" },
-  { id: 3, brand: "Puma", model: "Speedcat", price: 90, discountPrice: null, testId: "product-speedcat" },
-  { id: 4, brand: "Nike", model: "Air Force 1", price: 110, discountPrice: 89, testId: "product-af1" },
-  { id: 5, brand: "New Balance", model: "530", price: 115, discountPrice: null, testId: "product-nb-530-2" },
-  { id: 6, brand: "Adidas", model: "Samba", price: 95, discountPrice: null, testId: "product-samba" },
-  { id: 7, brand: "Converse", model: "Chuck 70", price: 85, discountPrice: 65, testId: "product-chuck" },
-  { id: 8, brand: "Vans", model: "Old Skool", price: 75, discountPrice: null, testId: "product-vans" },
+  { id: 1, brand: "New Balance", model: "MR530", price: 120, discountPrice: null, image: img1, testId: "product-nb-530" },
+  { id: 2, brand: "Adidas", model: "Gazelle", price: 100, discountPrice: 75, image: img2, testId: "product-gazelle" },
+  { id: 3, brand: "Puma", model: "Speedcat", price: 90, discountPrice: null, image: img3, testId: "product-speedcat" },
+  { id: 4, brand: "Nike", model: "Air Force 1", price: 110, discountPrice: 89, image: img4, testId: "product-af1" },
+  { id: 5, brand: "New Balance", model: "530", price: 115, discountPrice: null, image: img5, testId: "product-nb-530-2" },
+  { id: 6, brand: "Adidas", model: "Samba", price: 95, discountPrice: null, image: img6, testId: "product-samba" },
+  { id: 7, brand: "Converse", model: "Chuck 70", price: 85, discountPrice: 65, image: img7, testId: "product-chuck" },
+  { id: 8, brand: "Vans", model: "Old Skool", price: 75, discountPrice: null, image: img8, testId: "product-vans" },
 ];
 
 export default function ProductGrid() {
@@ -39,13 +47,11 @@ export default function ProductGrid() {
           {products.map((product) => (
             <div key={product.id} className="group relative" data-testid={product.testId}>
               <div className="relative aspect-square bg-muted rounded-md mb-3 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
-                  <span className="text-4xl sm:text-5xl font-bold text-slate-300">{product.brand[0]}</span>
-                </div>
+                <img src={product.image} alt={`${product.brand} ${product.model}`} className="w-full h-full object-cover" />
                 <Button
                   size="icon"
                   variant="ghost"
-                  className="absolute top-2 right-2 hover-elevate"
+                  className="absolute top-2 right-2 hover-elevate bg-background/80 backdrop-blur-sm"
                   onClick={() => toggleWishlist(product.id)}
                   data-testid={`button-wishlist-${product.id}`}
                 >
