@@ -28,20 +28,20 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6">
-            <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-calzado">
+            <a href="/category/sneakers" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-calzado">
               FOOTWEAR
             </a>
-            <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-ropa">
+            <a href="/category/apparel" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-ropa">
               CLOTHING
             </a>
             <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-accesorios">
               ACCESSORIES
             </a>
-            <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-marcas">
-              BRANDS
+            <a href="/category/converse" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-marcas">
+              CONVERSE
             </a>
-            <a href="#" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-outlet">
-              OUTLET
+            <a href="/category/sale" className="text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-outlet">
+              SALE
             </a>
           </nav>
 
@@ -74,20 +74,20 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <nav className="lg:hidden py-4 space-y-2 border-t border-border">
-            <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-calzado">
+            <a href="/category/sneakers" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-calzado">
               FOOTWEAR
             </a>
-            <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-ropa">
+            <a href="/category/apparel" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-ropa">
               CLOTHING
             </a>
             <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-accesorios">
               ACCESSORIES
             </a>
-            <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-marcas">
-              BRANDS
+            <a href="/category/converse" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-marcas">
+              CONVERSE
             </a>
-            <a href="#" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-outlet">
-              OUTLET
+            <a href="/category/sale" className="block py-2 text-sm font-bold uppercase hover:text-primary transition-colors" data-testid="link-mobile-outlet">
+              SALE
             </a>
           </nav>
         )}

@@ -46,38 +46,48 @@ export default function ProductGrid() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {products.map((product) => (
             <div key={product.id} className="group relative" data-testid={product.testId}>
-              <div className="relative aspect-square bg-muted rounded-md mb-3 overflow-hidden">
-                <img src={product.image} alt={`${product.brand} ${product.model}`} className="w-full h-full object-cover" />
-                <Button
-                  size="icon"
-                  variant="ghost"
-                  className="absolute top-2 right-2 hover-elevate bg-background/80 backdrop-blur-sm"
-                  onClick={() => toggleWishlist(product.id)}
-                  data-testid={`button-wishlist-${product.id}`}
-                >
-                  <Heart className={`h-5 w-5 ${wishlist.includes(product.id) ? 'fill-primary text-primary' : ''}`} />
-                </Button>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground mb-1" data-testid={`text-brand-${product.id}`}>{product.brand}</p>
-                <p className="font-medium mb-2" data-testid={`text-model-${product.id}`}>{product.model}</p>
-                <div className="flex items-center gap-2">
-                  {product.discountPrice ? (
-                    <>
-                      <span className="text-primary line-through text-sm" data-testid={`text-old-price-${product.id}`}>
-                        {product.price},00 €
-                      </span>
-                      <span className="font-bold" data-testid={`text-price-${product.id}`}>
-                        {product.discountPrice},00 €
-                      </span>
-                    </>
-                  ) : (
-                    <span className="font-bold" data-testid={`text-price-${product.id}`}>
-                      {product.price},00 €
-                    </span>
+              <a href={`/product/${product.id}`} className="block">
+                <div className="relative aspect-square bg-muted rounded-md mb-3 overflow-hidden">
+                  <img src={product.image} alt={`${product.brand} ${product.model}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="absolute top-2 right-2 hover-elevate bg-background/80 backdrop-blur-sm z-10"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toggleWishlist(product.id);
+                    }}
+                    data-testid={`button-wishlist-${product.id}`}
+                  >
+                    <Heart className={`h-5 w-5 ${wishlist.includes(product.id) ? 'fill-primary text-primary' : ''}`} />
+                  </Button>
+                  {product.discountPrice && (
+                    <div className="absolute top-2 left-2 bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded">
+                      -{Math.round((1 - product.discountPrice / product.price) * 100)}%
+                    </div>
                   )}
                 </div>
-              </div>
+                <div>
+                  <p className="text-sm text-muted-foreground mb-1" data-testid={`text-brand-${product.id}`}>{product.brand}</p>
+                  <p className="font-medium mb-2 group-hover:text-primary transition-colors" data-testid={`text-model-${product.id}`}>{product.model}</p>
+                  <div className="flex items-center gap-2">
+                    {product.discountPrice ? (
+                      <>
+                        <span className="text-muted-foreground line-through text-sm" data-testid={`text-old-price-${product.id}`}>
+                          {product.price},00 €
+                        </span>
+                        <span className="font-bold text-primary" data-testid={`text-price-${product.id}`}>
+                          {product.discountPrice},00 €
+                        </span>
+                      </>
+                    ) : (
+                      <span className="font-bold" data-testid={`text-price-${product.id}`}>
+                        {product.price},00 €
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </a>
             </div>
           ))}
         </div>
